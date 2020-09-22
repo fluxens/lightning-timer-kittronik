@@ -28,14 +28,18 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(500)
     }
     for (let index = 0; index <= 6; index++) {
-        haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))
+        haloDisplay.clear()
         haloDisplay.show()
         basic.pause(200)
-        haloDisplay.clear()
+        haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))
         haloDisplay.show()
         basic.pause(200)
     }
     basic.showIcon(IconNames.Happy)
+    basic.pause(2000)
+    basic.clearScreen()
+    haloDisplay.clear()
+    haloDisplay.show()
 })
 input.onButtonPressed(Button.AB, function () {
     haloDisplay.clear()
@@ -72,14 +76,16 @@ input.onButtonPressed(Button.B, function () {
         basic.pause(150)
     }
     for (let index = 0; index <= 6; index++) {
-        haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))
-        haloDisplay.show()
-        basic.pause(200)
         haloDisplay.clear()
         haloDisplay.show()
         basic.pause(200)
+        haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))
+        haloDisplay.show()
+        basic.pause(200)
     }
-    basic.showIcon(IconNames.Happy)
+    basic.pause(500)
+    haloDisplay.clear()
+    haloDisplay.show()
 })
 let haloDisplay: kitronik_halo_hd.ZIPHaloHd = null
 kitronik_halo_hd.setBuzzerPin()
@@ -87,6 +93,3 @@ haloDisplay = kitronik_halo_hd.createZIPHaloDisplay(60)
 haloDisplay.clear()
 basic.showIcon(IconNames.Yes)
 haloDisplay.show()
-basic.forever(function () {
-	
-})

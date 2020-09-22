@@ -82,6 +82,7 @@ input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Happy)
 })
 let haloDisplay: kitronik_halo_hd.ZIPHaloHd = null
+kitronik_halo_hd.setBuzzerPin()
 haloDisplay = kitronik_halo_hd.createZIPHaloDisplay(60)
 haloDisplay.clear()
 basic.showIcon(IconNames.Yes)

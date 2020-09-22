@@ -20,12 +20,12 @@ input.onButtonPressed(Button.A, function () {
     for (let index = 0; index <= 60; index++) {
         haloDisplay.setZipLedColor(index, kitronik_halo_hd.colors(ZipLedColors.Orange))
         haloDisplay.show()
-        basic.pause(1000)
+        basic.pause(500)
     }
     for (let index = 0; index <= 60; index++) {
         haloDisplay.setZipLedColor(index, kitronik_halo_hd.colors(ZipLedColors.Red))
         haloDisplay.show()
-        basic.pause(100)
+        basic.pause(500)
     }
     for (let index = 0; index <= 6; index++) {
         haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))
@@ -64,12 +64,12 @@ input.onButtonPressed(Button.B, function () {
     for (let index = 0; index <= 60; index++) {
         haloDisplay.setZipLedColor(index, kitronik_halo_hd.colors(ZipLedColors.Orange))
         haloDisplay.show()
-        basic.pause(200)
+        basic.pause(150)
     }
     for (let index = 0; index <= 60; index++) {
         haloDisplay.setZipLedColor(index, kitronik_halo_hd.colors(ZipLedColors.Red))
         haloDisplay.show()
-        basic.pause(200)
+        basic.pause(150)
     }
     for (let index = 0; index <= 6; index++) {
         haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))

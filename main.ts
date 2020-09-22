@@ -1,6 +1,5 @@
 input.onButtonPressed(Button.A, function () {
     haloDisplay.clear()
-    basic.showString("ACDC")
     basic.showNumber(5)
     basic.pause(500)
     basic.showNumber(4)
@@ -48,7 +47,6 @@ input.onButtonPressed(Button.AB, function () {
 })
 input.onButtonPressed(Button.B, function () {
     haloDisplay.clear()
-    basic.showString("ACDC")
     basic.showNumber(5)
     basic.pause(500)
     basic.showNumber(4)

@@ -1,11 +1,11 @@
 input.onButtonPressed(Button.A, function () {
     haloDisplay.clear()
     basic.showNumber(5)
-    basic.pause(500)
+    basic.pause(100)
     basic.showNumber(4)
-    basic.pause(500)
+    basic.pause(100)
     basic.showNumber(3)
-    basic.pause(500)
+    basic.pause(200)
     basic.showNumber(2)
     basic.pause(500)
     basic.showNumber(1)
@@ -30,13 +30,11 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(500)
     }
     basic.showNumber(0)
-    for (let index = 0; index <= 6; index++) {
-        haloDisplay.clear()
+    haloDisplay.showRainbow(1, 360)
+    for (let index = 0; index <= 180; index++) {
+        basic.pause(10)
+        haloDisplay.rotate(1)
         haloDisplay.show()
-        basic.pause(200)
-        haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))
-        haloDisplay.show()
-        basic.pause(200)
     }
     basic.clearScreen()
     haloDisplay.clear()
@@ -80,13 +78,11 @@ input.onButtonPressed(Button.B, function () {
         basic.pause(150)
     }
     basic.showNumber(0)
-    for (let index = 0; index <= 6; index++) {
-        haloDisplay.clear()
+    haloDisplay.showRainbow(1, 360)
+    for (let index = 0; index <= 180; index++) {
+        basic.pause(10)
+        haloDisplay.rotate(1)
         haloDisplay.show()
-        basic.pause(150)
-        haloDisplay.setColor(kitronik_halo_hd.colors(ZipLedColors.Red))
-        haloDisplay.show()
-        basic.pause(150)
     }
     basic.clearScreen()
     haloDisplay.clear()
